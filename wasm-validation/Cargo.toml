@@ -1,0 +1,14 @@
+[package]
+name = "wasm-validation"
+version = "0.1.0"
+authors = ["micah <micah@puzios.com>"]
+edition = "2022"
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+lto = true
+
+[dependencies]
+wasmparser = "0.91.0"
